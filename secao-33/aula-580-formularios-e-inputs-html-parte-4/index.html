@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 580 - Formulários e Inputs HTML (Parte 4) </title>
+</head>
+
+<body>
+    <form action="#" method="get" target="_self" autocomplete="off">
+        <p> Meu fomulário </p>
+
+        <p> <label> Nome completo: <input type="text" id="nome" name="nome" placeholder="Seu nome" required> </label>
+        </p>
+
+        <p> <label for="mae"> Nome complto da mãe: </label>
+            <input type="text" name="mae" id="mae" placeholder="Nome da mãe" required>
+        </p>
+
+        <p> <label for="dev"> É programador? </label> <br>
+            Mobile <input type="checkbox" name="dev" id="dev" value="sim"> <br>
+            Full Stack <input type="checkbox" name="dev" id="dev" value="sim"> </p>
+
+        <p> <label for="sexo"> Sexo </label> <br>
+            <input type="radio" id="sexo" name="sexo" value="Masculino"> Masculino
+            <input type="radio" id="sexo" name="sexo" value="Feminino"> Feminino
+        </p>
+
+        <p> <label for="email"> E-mail </label>
+            <input type="email" name="email" id="email" placeholder="ex.: nome@mail.com" required>
+        </p>
+
+        <p> <label for="hora"> Hora </label>
+            <input type="time" name="hora" id="hora">
+        </p>
+
+        <p> <label for="dia"> Dia </label>
+            <input type="date" name="dia" id="dia">
+        </p>
+
+        <p> <label for="dia-hora"> Dia e hora </label>
+            <input type="datetime-local" name="dia-hora" id="dia-hora">
+        </p>
+
+        <p> <label for="cor"> <input type="color" name="cor" id="cor"> </label> </p>
+
+        <p> <label for="file"> </label>
+            <input type="file" name="file" id="file" accept="image/*" multiple>
+        </p>
+
+        <p> <label for="number"> Número da sorte, entre 1 e 1000 </label> <input type="number" name="number" id="number"
+                min="1" max="1000"> </p>
+
+        <p> <label for="password"> </label> Senha
+            <input type="password" name="password" id="password" placeholder="Digite sua senha:" minlength="10"
+                maxlength="35">
+        </p>
+
+        <p> <label for="range"> Range </label>
+            <input type="range" name="range" id="range" min="1" max="10" step="1">
+        </p>
+
+        <p> <label for="url"> URL </label>
+            <input type="url" name="url" id="url" placeholder="http://">
+        </p>
+
+        <p> <label for="search"> Pesquisar </label>
+            <input type="search" name="search" id="search" placeholder="Buscar">
+        </p>
+
+        <p> <label for="select"> Estado </label>
+            <select name="select" id="select">
+                <optgroup label="Norte">
+                    <option value="Amapá"> Amapá </option>
+                    <option value="Acre"> Acre </option>
+                    <option value="Pará"> Pará </option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="Santa Catarina"> Santa Catarina </option>
+                    <option value="Paraná"> Paraná </option>
+                    <option value="Rio Grande do Sul"> Rio Grande do Sul </option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p> <label for="areatxt"> Comentários </label> <br>
+            <textarea name="areatxt" id="areatxt" cols="30" rows="5" placeholder="Deixe seu comentário"> </textarea>
+        </p>
+
+        <p> <button type="submit"> Enviar </button>
+            <button type="reset"> Limpar </button>
+        </p>
+    </form>
+</body>
+
+</html>
